@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **customer_lastnames**| **string[]** |   | [optional]
 **customer_phones**| **string[]** |   | [optional]
 **cart_ids**| **string[]** |   | [optional]
-**cart_status**| [**\GeminiCommerce\Cart\Model\ListCartsRequestFilterCartStatus**](ListCartsRequestFilterCartStatus.md) |  for more information please, see Model/ListCartsRequestFilterCartStatus.php  | [optional]
-**created_at**| [**\GeminiCommerce\Cart\Model\ListCartsRequestFilterDate[]**](ListCartsRequestFilterDate.md) |   | [optional]
+**cart_status**| [**\OpenAPI\Client\Model\ListCartsRequestFilterCartStatus**](ListCartsRequestFilterCartStatus.md) |  for more information please, see Model/ListCartsRequestFilterCartStatus.php  | [optional]
+**created_at**| [**\OpenAPI\Client\Model\ListCartsRequestFilterDate[]**](ListCartsRequestFilterDate.md) |   | [optional]
 **agent_grn**| **string** |   | [optional]
 
 

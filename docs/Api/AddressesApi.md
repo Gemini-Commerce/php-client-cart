@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\AddressesApi
+# OpenAPI\Client\AddressesApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\AddressesApi(
+$apiInstance = new OpenAPI\Client\Api\AddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetBillingAddressRequest(); // \GeminiCommerce\Cart\Model\CartSetBillingAddressRequest
+$body = new \OpenAPI\Client\Model\CartSetBillingAddressRequest(); // \OpenAPI\Client\Model\CartSetBillingAddressRequest
 
 try {
     $result = $apiInstance->setBillingAddress($body);
@@ -51,7 +51,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetBillingAddressRequest**](../Model/CartSetBillingAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetBillingAddressRequest**](../Model/CartSetBillingAddressRequest.md)|  | |
 
 ### Return type
 
@@ -88,18 +88,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\AddressesApi(
+$apiInstance = new OpenAPI\Client\Api\AddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetShipmentAddressRequest(); // \GeminiCommerce\Cart\Model\CartSetShipmentAddressRequest
+$body = new \OpenAPI\Client\Model\CartSetShipmentAddressRequest(); // \OpenAPI\Client\Model\CartSetShipmentAddressRequest
 
 try {
     $result = $apiInstance->setShipmentAddress($body);
@@ -113,7 +113,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetShipmentAddressRequest**](../Model/CartSetShipmentAddressRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetShipmentAddressRequest**](../Model/CartSetShipmentAddressRequest.md)|  | |
 
 ### Return type
 

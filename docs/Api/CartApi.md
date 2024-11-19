@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\CartApi
+# OpenAPI\Client\CartApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -23,18 +23,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\CartApi(
+$apiInstance = new OpenAPI\Client\Api\CartApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetCustomPriceOnItemsRequest(); // \GeminiCommerce\Cart\Model\CartSetCustomPriceOnItemsRequest
+$body = new \OpenAPI\Client\Model\CartSetCustomPriceOnItemsRequest(); // \OpenAPI\Client\Model\CartSetCustomPriceOnItemsRequest
 
 try {
     $result = $apiInstance->cartSetCustomPriceOnItems($body);
@@ -48,7 +48,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetCustomPriceOnItemsRequest**](../Model/CartSetCustomPriceOnItemsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetCustomPriceOnItemsRequest**](../Model/CartSetCustomPriceOnItemsRequest.md)|  | |
 
 ### Return type
 

@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**carts**| [**\GeminiCommerce\Cart\Model\CartCartData[]**](CartCartData.md) |   | [optional]
+**carts**| [**\OpenAPI\Client\Model\CartCartData[]**](CartCartData.md) |   | [optional]
 **next_page_token**| **string** |   | [optional]
 
 

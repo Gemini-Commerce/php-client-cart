@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\PromotionsApi
+# OpenAPI\Client\PromotionsApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\PromotionsApi(
+$apiInstance = new OpenAPI\Client\Api\PromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartApplyCouponsRequest(); // \GeminiCommerce\Cart\Model\CartApplyCouponsRequest
+$body = new \OpenAPI\Client\Model\CartApplyCouponsRequest(); // \OpenAPI\Client\Model\CartApplyCouponsRequest
 
 try {
     $result = $apiInstance->applyCoupons($body);
@@ -51,7 +51,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartApplyCouponsRequest**](../Model/CartApplyCouponsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartApplyCouponsRequest**](../Model/CartApplyCouponsRequest.md)|  | |
 
 ### Return type
 
@@ -88,18 +88,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\PromotionsApi(
+$apiInstance = new OpenAPI\Client\Api\PromotionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartRemoveCouponsRequest(); // \GeminiCommerce\Cart\Model\CartRemoveCouponsRequest
+$body = new \OpenAPI\Client\Model\CartRemoveCouponsRequest(); // \OpenAPI\Client\Model\CartRemoveCouponsRequest
 
 try {
     $result = $apiInstance->removeCoupons($body);
@@ -113,7 +113,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartRemoveCouponsRequest**](../Model/CartRemoveCouponsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartRemoveCouponsRequest**](../Model/CartRemoveCouponsRequest.md)|  | |
 
 ### Return type
 

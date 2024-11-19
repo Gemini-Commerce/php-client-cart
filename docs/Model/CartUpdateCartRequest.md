@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenant_id**| **string** |   | [optional]
 **cart_id**| **string** |   | [optional]
-**payload**| [**\GeminiCommerce\Cart\Model\UpdateCartRequestPayload**](UpdateCartRequestPayload.md) |   | [optional]
+**payload**| [**\OpenAPI\Client\Model\UpdateCartRequestPayload**](UpdateCartRequestPayload.md) |   | [optional]
 **payload_mask**| **string** |   | [optional]
 
 

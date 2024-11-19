@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\BasicOperationsApi
+# OpenAPI\Client\BasicOperationsApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -21,7 +21,7 @@ All URIs are relative to https://cart.api.gogemini.io, except if the operation d
 ## `addProducts()`
 
 ```php
-addProducts($body): \GeminiCommerce\Cart\Model\CartAddProductsResponse
+addProducts($body): \OpenAPI\Client\Model\CartAddProductsResponse
 ```
 
 Add Products
@@ -36,18 +36,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartAddProductsRequest(); // \GeminiCommerce\Cart\Model\CartAddProductsRequest
+$body = new \OpenAPI\Client\Model\CartAddProductsRequest(); // \OpenAPI\Client\Model\CartAddProductsRequest
 
 try {
     $result = $apiInstance->addProducts($body);
@@ -61,11 +61,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartAddProductsRequest**](../Model/CartAddProductsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartAddProductsRequest**](../Model/CartAddProductsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartAddProductsResponse**](../Model/CartAddProductsResponse.md)
+[**\OpenAPI\Client\Model\CartAddProductsResponse**](../Model/CartAddProductsResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ try {
 ## `createCart()`
 
 ```php
-createCart($body): \GeminiCommerce\Cart\Model\CartCreateCartResponse
+createCart($body): \OpenAPI\Client\Model\CartCreateCartResponse
 ```
 
 Create Cart
@@ -98,18 +98,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartCreateCartRequest(); // \GeminiCommerce\Cart\Model\CartCreateCartRequest
+$body = new \OpenAPI\Client\Model\CartCreateCartRequest(); // \OpenAPI\Client\Model\CartCreateCartRequest
 
 try {
     $result = $apiInstance->createCart($body);
@@ -123,11 +123,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartCreateCartRequest**](../Model/CartCreateCartRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartCreateCartRequest**](../Model/CartCreateCartRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartCreateCartResponse**](../Model/CartCreateCartResponse.md)
+[**\OpenAPI\Client\Model\CartCreateCartResponse**](../Model/CartCreateCartResponse.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ try {
 ## `getActiveCartByCustomer()`
 
 ```php
-getActiveCartByCustomer($body): \GeminiCommerce\Cart\Model\CartGetActiveCartByCustomerResponse
+getActiveCartByCustomer($body): \OpenAPI\Client\Model\CartGetActiveCartByCustomerResponse
 ```
 
 Get Active Cart By Customer
@@ -160,18 +160,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartGetActiveCartByCustomerRequest(); // \GeminiCommerce\Cart\Model\CartGetActiveCartByCustomerRequest
+$body = new \OpenAPI\Client\Model\CartGetActiveCartByCustomerRequest(); // \OpenAPI\Client\Model\CartGetActiveCartByCustomerRequest
 
 try {
     $result = $apiInstance->getActiveCartByCustomer($body);
@@ -185,11 +185,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartGetActiveCartByCustomerRequest**](../Model/CartGetActiveCartByCustomerRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartGetActiveCartByCustomerRequest**](../Model/CartGetActiveCartByCustomerRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartGetActiveCartByCustomerResponse**](../Model/CartGetActiveCartByCustomerResponse.md)
+[**\OpenAPI\Client\Model\CartGetActiveCartByCustomerResponse**](../Model/CartGetActiveCartByCustomerResponse.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ try {
 ## `getCart()`
 
 ```php
-getCart($body): \GeminiCommerce\Cart\Model\CartGetCartResponse
+getCart($body): \OpenAPI\Client\Model\CartGetCartResponse
 ```
 
 Get Cart
@@ -222,18 +222,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartGetCartRequest(); // \GeminiCommerce\Cart\Model\CartGetCartRequest | Get cart request
+$body = new \OpenAPI\Client\Model\CartGetCartRequest(); // \OpenAPI\Client\Model\CartGetCartRequest | Get cart request
 
 try {
     $result = $apiInstance->getCart($body);
@@ -247,11 +247,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartGetCartRequest**](../Model/CartGetCartRequest.md)| Get cart request | |
+| **body** | [**\OpenAPI\Client\Model\CartGetCartRequest**](../Model/CartGetCartRequest.md)| Get cart request | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartGetCartResponse**](../Model/CartGetCartResponse.md)
+[**\OpenAPI\Client\Model\CartGetCartResponse**](../Model/CartGetCartResponse.md)
 
 ### Authorization
 
@@ -269,7 +269,7 @@ try {
 ## `listCarts()`
 
 ```php
-listCarts($body): \GeminiCommerce\Cart\Model\CartListCartsResponse
+listCarts($body): \OpenAPI\Client\Model\CartListCartsResponse
 ```
 
 List Carts
@@ -284,18 +284,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartListCartsRequest(); // \GeminiCommerce\Cart\Model\CartListCartsRequest
+$body = new \OpenAPI\Client\Model\CartListCartsRequest(); // \OpenAPI\Client\Model\CartListCartsRequest
 
 try {
     $result = $apiInstance->listCarts($body);
@@ -309,11 +309,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartListCartsRequest**](../Model/CartListCartsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartListCartsRequest**](../Model/CartListCartsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartListCartsResponse**](../Model/CartListCartsResponse.md)
+[**\OpenAPI\Client\Model\CartListCartsResponse**](../Model/CartListCartsResponse.md)
 
 ### Authorization
 
@@ -331,7 +331,7 @@ try {
 ## `mergeCarts()`
 
 ```php
-mergeCarts($body): \GeminiCommerce\Cart\Model\CartMergeCartsResponse
+mergeCarts($body): \OpenAPI\Client\Model\CartMergeCartsResponse
 ```
 
 Merge Carts
@@ -346,18 +346,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartMergeCartsRequest(); // \GeminiCommerce\Cart\Model\CartMergeCartsRequest
+$body = new \OpenAPI\Client\Model\CartMergeCartsRequest(); // \OpenAPI\Client\Model\CartMergeCartsRequest
 
 try {
     $result = $apiInstance->mergeCarts($body);
@@ -371,11 +371,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartMergeCartsRequest**](../Model/CartMergeCartsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartMergeCartsRequest**](../Model/CartMergeCartsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartMergeCartsResponse**](../Model/CartMergeCartsResponse.md)
+[**\OpenAPI\Client\Model\CartMergeCartsResponse**](../Model/CartMergeCartsResponse.md)
 
 ### Authorization
 
@@ -408,18 +408,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartRemoveProductsRequest(); // \GeminiCommerce\Cart\Model\CartRemoveProductsRequest
+$body = new \OpenAPI\Client\Model\CartRemoveProductsRequest(); // \OpenAPI\Client\Model\CartRemoveProductsRequest
 
 try {
     $result = $apiInstance->removeProducts($body);
@@ -433,7 +433,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartRemoveProductsRequest**](../Model/CartRemoveProductsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartRemoveProductsRequest**](../Model/CartRemoveProductsRequest.md)|  | |
 
 ### Return type
 
@@ -470,18 +470,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetAdditionalInfoRequest(); // \GeminiCommerce\Cart\Model\CartSetAdditionalInfoRequest
+$body = new \OpenAPI\Client\Model\CartSetAdditionalInfoRequest(); // \OpenAPI\Client\Model\CartSetAdditionalInfoRequest
 
 try {
     $result = $apiInstance->setAdditionalInfo($body);
@@ -495,7 +495,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetAdditionalInfoRequest**](../Model/CartSetAdditionalInfoRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetAdditionalInfoRequest**](../Model/CartSetAdditionalInfoRequest.md)|  | |
 
 ### Return type
 
@@ -532,18 +532,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetNotesRequest(); // \GeminiCommerce\Cart\Model\CartSetNotesRequest
+$body = new \OpenAPI\Client\Model\CartSetNotesRequest(); // \OpenAPI\Client\Model\CartSetNotesRequest
 
 try {
     $result = $apiInstance->setNotes($body);
@@ -557,7 +557,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetNotesRequest**](../Model/CartSetNotesRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetNotesRequest**](../Model/CartSetNotesRequest.md)|  | |
 
 ### Return type
 
@@ -579,7 +579,7 @@ try {
 ## `triggerRealignment()`
 
 ```php
-triggerRealignment($body): \GeminiCommerce\Cart\Model\CartTriggerRealignmentResponse
+triggerRealignment($body): \OpenAPI\Client\Model\CartTriggerRealignmentResponse
 ```
 
 Trigger Realignment
@@ -594,18 +594,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartTriggerRealignmentRequest(); // \GeminiCommerce\Cart\Model\CartTriggerRealignmentRequest
+$body = new \OpenAPI\Client\Model\CartTriggerRealignmentRequest(); // \OpenAPI\Client\Model\CartTriggerRealignmentRequest
 
 try {
     $result = $apiInstance->triggerRealignment($body);
@@ -619,11 +619,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartTriggerRealignmentRequest**](../Model/CartTriggerRealignmentRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartTriggerRealignmentRequest**](../Model/CartTriggerRealignmentRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartTriggerRealignmentResponse**](../Model/CartTriggerRealignmentResponse.md)
+[**\OpenAPI\Client\Model\CartTriggerRealignmentResponse**](../Model/CartTriggerRealignmentResponse.md)
 
 ### Authorization
 
@@ -656,18 +656,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartUpdateCartRequest(); // \GeminiCommerce\Cart\Model\CartUpdateCartRequest
+$body = new \OpenAPI\Client\Model\CartUpdateCartRequest(); // \OpenAPI\Client\Model\CartUpdateCartRequest
 
 try {
     $result = $apiInstance->updateCart($body);
@@ -681,7 +681,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartUpdateCartRequest**](../Model/CartUpdateCartRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartUpdateCartRequest**](../Model/CartUpdateCartRequest.md)|  | |
 
 ### Return type
 
@@ -718,18 +718,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\BasicOperationsApi(
+$apiInstance = new OpenAPI\Client\Api\BasicOperationsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartUpdateProductsRequest(); // \GeminiCommerce\Cart\Model\CartUpdateProductsRequest
+$body = new \OpenAPI\Client\Model\CartUpdateProductsRequest(); // \OpenAPI\Client\Model\CartUpdateProductsRequest
 
 try {
     $result = $apiInstance->updateProducts($body);
@@ -743,7 +743,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartUpdateProductsRequest**](../Model/CartUpdateProductsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartUpdateProductsRequest**](../Model/CartUpdateProductsRequest.md)|  | |
 
 ### Return type
 

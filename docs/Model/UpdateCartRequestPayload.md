@@ -6,8 +6,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cart_status**| [**\GeminiCommerce\Cart\Model\CartCartStatus**](CartCartStatus.md) |  for more information please, see Model/CartCartStatus.php  | [optional]
-**customer_data**| [**\GeminiCommerce\Cart\Model\CartCustomerData**](CartCustomerData.md) |   | [optional]
+**cart_status**| [**\OpenAPI\Client\Model\CartCartStatus**](CartCartStatus.md) |  for more information please, see Model/CartCartStatus.php  | [optional]
+**customer_data**| [**\OpenAPI\Client\Model\CartCustomerData**](CartCustomerData.md) |   | [optional]
 **locale**| **string** |   | [optional]
 
 

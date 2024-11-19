@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\PaymentsApi
+# OpenAPI\Client\PaymentsApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://cart.api.gogemini.io, except if the operation d
 ## `listPaymentMethods()`
 
 ```php
-listPaymentMethods($body): \GeminiCommerce\Cart\Model\CartListPaymentMethodsResponse
+listPaymentMethods($body): \OpenAPI\Client\Model\CartListPaymentMethodsResponse
 ```
 
 List Payment Methods
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\PaymentsApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartListPaymentMethodsRequest(); // \GeminiCommerce\Cart\Model\CartListPaymentMethodsRequest
+$body = new \OpenAPI\Client\Model\CartListPaymentMethodsRequest(); // \OpenAPI\Client\Model\CartListPaymentMethodsRequest
 
 try {
     $result = $apiInstance->listPaymentMethods($body);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartListPaymentMethodsRequest**](../Model/CartListPaymentMethodsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartListPaymentMethodsRequest**](../Model/CartListPaymentMethodsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartListPaymentMethodsResponse**](../Model/CartListPaymentMethodsResponse.md)
+[**\OpenAPI\Client\Model\CartListPaymentMethodsResponse**](../Model/CartListPaymentMethodsResponse.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `setSetPayments()`
 
 ```php
-setSetPayments($body): \GeminiCommerce\Cart\Model\CartSetPaymentsResponse
+setSetPayments($body): \OpenAPI\Client\Model\CartSetPaymentsResponse
 ```
 
 Set SetPayments
@@ -88,18 +88,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\PaymentsApi(
+$apiInstance = new OpenAPI\Client\Api\PaymentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetPaymentsRequest(); // \GeminiCommerce\Cart\Model\CartSetPaymentsRequest
+$body = new \OpenAPI\Client\Model\CartSetPaymentsRequest(); // \OpenAPI\Client\Model\CartSetPaymentsRequest
 
 try {
     $result = $apiInstance->setSetPayments($body);
@@ -113,11 +113,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetPaymentsRequest**](../Model/CartSetPaymentsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetPaymentsRequest**](../Model/CartSetPaymentsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartSetPaymentsResponse**](../Model/CartSetPaymentsResponse.md)
+[**\OpenAPI\Client\Model\CartSetPaymentsResponse**](../Model/CartSetPaymentsResponse.md)
 
 ### Authorization
 

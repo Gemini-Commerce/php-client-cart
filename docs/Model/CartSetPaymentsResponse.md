@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**total_due**| [**\GeminiCommerce\Cart\Model\CartMoney**](CartMoney.md) |   | [optional]
+**total_due**| [**\OpenAPI\Client\Model\CartMoney**](CartMoney.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

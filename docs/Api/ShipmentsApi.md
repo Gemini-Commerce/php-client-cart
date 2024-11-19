@@ -1,4 +1,4 @@
-# GeminiCommerce\Cart\ShipmentsApi
+# OpenAPI\Client\ShipmentsApi
 
 All URIs are relative to https://cart.api.gogemini.io, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://cart.api.gogemini.io, except if the operation d
 ## `listShipmentMethods()`
 
 ```php
-listShipmentMethods($body): \GeminiCommerce\Cart\Model\CartListShipmentMethodsResponse
+listShipmentMethods($body): \OpenAPI\Client\Model\CartListShipmentMethodsResponse
 ```
 
 List Shipment Methods
@@ -26,18 +26,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\ShipmentsApi(
+$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartListShipmentMethodsRequest(); // \GeminiCommerce\Cart\Model\CartListShipmentMethodsRequest
+$body = new \OpenAPI\Client\Model\CartListShipmentMethodsRequest(); // \OpenAPI\Client\Model\CartListShipmentMethodsRequest
 
 try {
     $result = $apiInstance->listShipmentMethods($body);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartListShipmentMethodsRequest**](../Model/CartListShipmentMethodsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartListShipmentMethodsRequest**](../Model/CartListShipmentMethodsRequest.md)|  | |
 
 ### Return type
 
-[**\GeminiCommerce\Cart\Model\CartListShipmentMethodsResponse**](../Model/CartListShipmentMethodsResponse.md)
+[**\OpenAPI\Client\Model\CartListShipmentMethodsResponse**](../Model/CartListShipmentMethodsResponse.md)
 
 ### Authorization
 
@@ -88,18 +88,18 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure API key authorization: Authorization
-$config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = GeminiCommerce\Cart\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+// $config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
 
 
-$apiInstance = new GeminiCommerce\Cart\Api\ShipmentsApi(
+$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \GeminiCommerce\Cart\Model\CartSetShipmentsRequest(); // \GeminiCommerce\Cart\Model\CartSetShipmentsRequest
+$body = new \OpenAPI\Client\Model\CartSetShipmentsRequest(); // \OpenAPI\Client\Model\CartSetShipmentsRequest
 
 try {
     $result = $apiInstance->setShipments($body);
@@ -113,7 +113,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **body** | [**\GeminiCommerce\Cart\Model\CartSetShipmentsRequest**](../Model/CartSetShipmentsRequest.md)|  | |
+| **body** | [**\OpenAPI\Client\Model\CartSetShipmentsRequest**](../Model/CartSetShipmentsRequest.md)|  | |
 
 ### Return type
 
